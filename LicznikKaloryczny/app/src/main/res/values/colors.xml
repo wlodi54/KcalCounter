@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAppBar">#E74D36</color>
+    <color name="colorPrimary">#FF9F1C</color>
+    <color name="colorPrimaryDark">#2EC4B6</color>
+    <color name="colorAccent">#000</color>
+    <color name="fontLight">#fdfffc</color>
+    <color name="background">#011627</color>
+    <color name="backgroundLighter">#011647</color>
+    <color name="hintColor">#2ec4b6</color>
+    <color name="borderButton">#ff9f1c</color>
+    <color name="buttonColor">#e71d36</color>
+    <color name="colorAccentLight">#1DD881</color>
+    <color name="easyTrainign">#1B512D</color>
+
+</resources>

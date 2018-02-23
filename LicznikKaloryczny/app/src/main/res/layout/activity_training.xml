@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_training"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activities.TrainingActivity"
+
+    >
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_training_start"
+        android:onClick="startClick"
+        android:text="Start"
+        android:textColor="@color/buttonColor"
+        android:textSize="22sp"
+        android:layout_below="@+id/training_disciplineImg"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:textColor="@color/fontLight"
+        android:text="Stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonStop"
+        android:onClick="stopClick"
+        android:background="@drawable/button_small2"
+        android:layout_marginTop="71dp"
+        android:layout_alignTop="@+id/buttonStart"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <Button
+        android:textColor="@color/fontLight"
+        android:text="Pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPause"
+        android:onClick="pauseClick"
+        android:background="@drawable/button_small2"
+        android:layout_above="@+id/timerTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonStop"
+        android:layout_centerHorizontal="true"
+        android:text="00:00:00"
+        android:textColor="@color/fontLight"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/kcalCounerTtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/speedTextView"
+        android:layout_alignBottom="@+id/speedTextView"
+        android:layout_centerHorizontal="true"
+        android:text="0.00"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="5"
+        android:gravity="start"
+        android:text="0.00"
+        android:textAlignment="textStart"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp"
+        android:layout_above="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:text="Kilokalorie"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintColor"
+        android:layout_above="@+id/textView10"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:textColor="@color/fontLight"
+        android:text="Dystans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14"
+        android:textSize="16sp"
+        android:layout_below="@+id/view2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/speedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="15dp"
+        android:text="0.00"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp" />
+
+    <TextView
+
+        android:text="Prędkość"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginTop="33dp"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp"
+        android:layout_below="@+id/timerTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/training_gps_statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Sprawdzanie GPS..."
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="Bieg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/training_disciplineName"
+        android:textSize="16sp"
+        android:textColor="@color/fontLight"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/buttonPause"
+        android:layout_alignStart="@+id/buttonPause"
+        android:layout_toLeftOf="@+id/kcalCounerTtextView"
+        android:layout_toStartOf="@+id/kcalCounerTtextView" />
+
+    <ImageView
+        android:id="@+id/training_disciplineImg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:adjustViewBounds="false"
+        app:srcCompat="@drawable/ic_bieg_plan"
+        android:layout_below="@+id/training_disciplineName"
+        android:layout_alignRight="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/training_tepo_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tempo"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp"
+        android:layout_below="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintColor"
+        android:layout_below="@+id/kcalCounerTtextView"/>
+
+    <TextView
+        android:id="@+id/training_kcalmin_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/training_tepo_label"
+        android:layout_centerHorizontal="true"
+        android:text="Tempo spalania"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/training_avrspeed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/training_kcalmin_label"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Śr. prędk."
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/training_tepo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/training_tepo_label"
+        android:layout_alignStart="@+id/training_tepo_label"
+        android:layout_below="@+id/training_tepo_label"
+        android:layout_marginTop="15dp"
+        android:text="0.00"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/training_kcalmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/training_tepo"
+        android:layout_alignBottom="@+id/training_tepo"
+        android:layout_centerHorizontal="true"
+        android:text="0.00"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp" />
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hintColor"
+        android:layout_below="@+id/training_kcalmin"/>
+
+
+    <TextView
+        android:id="@+id/training_avr_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/training_kcalmin"
+        android:layout_alignBottom="@+id/training_kcalmin"
+        android:layout_alignEnd="@+id/speedTextView"
+        android:layout_alignRight="@+id/speedTextView"
+        android:text="0.00"
+        android:textColor="@color/fontLight"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView14"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="1dp"
+        android:text="km"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="kcal"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="1dp"
+        android:text="km/h"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/training_tepo_label"
+        android:layout_alignStart="@+id/training_tepo_label"
+        android:layout_below="@+id/training_tepo_label"
+        android:layout_marginTop="1dp"
+        android:text="min/km"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/training_kcalmin_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:text="kcal/min"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/training_avrspeed_label"
+        android:layout_marginTop="1dp"
+        android:text="km/h"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

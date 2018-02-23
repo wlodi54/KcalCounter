@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <TextView
+        android:id="@+id/plan_dialog_dyscTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Dyscyplina"
+        android:textColor="@color/fontLight"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/plan_dialog_dystansEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/plan_dialog_dyscTextView"
+        android:ems="10"
+        android:hint="Dystans [km]"
+        android:inputType="number"
+        android:textColor="@color/fontLight"
+        android:textColorHint="@color/hintColor" />
+
+    <EditText
+        android:id="@+id/plan_dialog_timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plan_dialog_dystansEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Czas trwania [min]"
+        android:inputType="time"
+        android:textColor="@color/fontLight"
+        android:textColorHint="@color/hintColor" />
+
+    <Button
+
+        android:id="@+id/plan_dialog_btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/plan_dialog_timeEditText"
+        android:layout_marginBottom="3dp"
+        android:background="@color/buttonColor"
+        android:text="Zapisz"
+        android:textColor="@color/fontLight" />
+
+    <Button
+        android:id="@+id/plan_dialog_btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/plan_dialog_btnSave"
+        android:layout_centerHorizontal="true"
+        android:background="@color/buttonColor"
+        android:text="Usuń"
+        android:textColor="@color/fontLight" />
+
+</RelativeLayout>

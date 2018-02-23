@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp">
+
+
+    <ImageView
+        android:id="@+id/history_recycler_row_img"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_column="0"
+        android:layout_marginRight="10dp"
+        android:layout_row="1"
+        app:srcCompat="@drawable/ic_bieg_plan" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_kcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/history_recycler_row_img"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:paddingTop="15dp"
+        android:text="500"
+        android:textAlignment="center"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/history_recycler_row_kcal"
+        android:layout_toEndOf="@+id/history_recycler_row_img"
+        android:layout_toRightOf="@+id/history_recycler_row_img"
+        android:text="Jazda na rowerze"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/history_recycler_row_name"
+        android:layout_alignBottom="@+id/history_recycler_row_name"
+        android:layout_column="3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_row="1"
+        android:layout_toEndOf="@+id/history_recycler_row_name"
+        android:layout_toRightOf="@+id/history_recycler_row_name"
+        android:text="12 11 1991"
+        android:textColor="@color/fontLight"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/history_recycler_row_kcal"
+        android:background="@color/colorAccentLight" />
+
+    <ImageView
+        android:id="@+id/history_recycler_row_odznaka"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/history_recycler_row_name"
+        android:layout_toEndOf="@+id/history_recycler_row_dateTextView"
+        android:layout_toRightOf="@+id/history_recycler_row_dateTextView"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/brown_medal" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/history_recycler_row_distance"
+        android:layout_alignBottom="@+id/history_recycler_row_distance"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/history_recycler_row_distance"
+        android:layout_toRightOf="@+id/history_recycler_row_distance"
+        android:text="km"
+        android:textColor="@color/fontLight"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_recycler_row_km"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/history_recycler_row_km"
+        android:layout_toRightOf="@+id/history_recycler_row_km"
+        android:text="0:00:00"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_kcalUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/history_recycler_row_kcal"
+        android:layout_alignBottom="@+id/history_recycler_row_kcal"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/history_recycler_row_kcal"
+        android:layout_toRightOf="@+id/history_recycler_row_kcal"
+        android:text="kcal"
+        android:textColor="@color/fontLight"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/history_recycler_row_time"
+        android:layout_alignBottom="@+id/history_recycler_row_time"
+        android:layout_marginLeft="3dp"
+        android:layout_toEndOf="@+id/history_recycler_row_time"
+        android:layout_toRightOf="@+id/history_recycler_row_time"
+        android:text="sec"
+        android:textColor="@color/fontLight"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/history_recycler_row_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/history_recycler_row_kcalUnit"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_toEndOf="@+id/history_recycler_row_img"
+        android:layout_toRightOf="@+id/history_recycler_row_img"
+        android:text="6,23"
+        android:textAlignment="center"
+        android:textColor="@color/fontLight"
+        android:textSize="16sp" />
+
+</RelativeLayout>

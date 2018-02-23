@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/user_list"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingStart="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingEnd="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="5dp"
+
+
+    >
+
+    <TextView
+        android:text="Użytkownicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/login_text_view"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        android:textColor="@color/fontLight"
+        android:layout_marginBottom="5dp" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/login_list_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_text_view"
+        android:layout_above="@+id/login_loginBtn" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccentLight"
+        android:layout_above="@+id/login_list_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:padding="20dp"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_loginBtn"
+        android:onClick="listOfUsersLoginClick"
+        android:background="@drawable/button_small2"
+        android:textColor="@color/fontLight"
+        android:text="Zaloguj"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/login_text_view"
+        android:layout_toEndOf="@+id/login_text_view" />
+
+    <Button
+        android:padding="20dp"
+        android:text="Stwórz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_user_btn"
+        android:textColor="@color/fontLight"
+        android:background="@drawable/button_small2"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/login_text_view"
+        android:layout_toStartOf="@+id/login_text_view"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

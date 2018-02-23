@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Licznik Kaloryczny</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_insert_user">Unable to save your changes</string>
+    <string name="select_discipline_trening">Trening</string>
+    <string name="select_discipline_history">Historia</string>
+    <string name="select_discipline_settings">Ustawienia</string>
+    <string name="select_discipline_change_user">Zmień użytkownika</string>
+    <string name="select_discipline_edit_user">Panel użytkownika</string>
+    <string name="select_discipline_add_user">Dodaj użytkownika</string>
+    <string name="gps_status_ok">Gps Ok.</string>
+    <string name="brak_uzytkownikow">BRAK UŻYTKOWNIKÓW</string>
+    <string name="dyscyplina_bieg">Bieg</string>
+    <string name="dyscyplina_kolarstwo">Kolarstwo</string>
+    <string name="dyscyplina_nordic_walking">Nordic walking</string>
+    <string name="dyscyplina_jazda_na_rolkach">Łyżworolki</string>
+    <string name="dyscyplina_jazda_konno">Jazda konno</string>
+    <string name="dyscypline_skateboarding">Skateboarding</string>
+    <string name="dyscypline_bieg_narciarski">Bieg narciarski</string>
+    <string name="dyscyplina_narc_alp">Narc. alpejskie</string>
+    <string name="dyscyplina_snowboard">Snowboarding</string>
+    <string name="dyscyplina_kajakarstwo">Kajakarstwo</string>
+    <string name="dyscyplina_marsz">Marsz</string>
+    <string name="spinner_kcal_label">Wybierz kcal</string>
+    <string name="saving_label">Saving....</string>
+    <string name="brak_statystyk">Brak Statystyk....</string>
+    <string name="first_save_plan">Najpierw zapisz plan.</string>
+    <string name="empty_current_history">Brak danej histori</string>
+    <string name="no_data_to_simulate">Brak danych potrzebnych do symulacji</string>
+
+    <string-array name="dni_tygodnia">
+        <item>Poniedziałek</item>
+        <item>Wtorek</item>
+        <item>Środa</item>
+        <item>Czwartek</item>
+        <item>Piątek</item>
+        <item>Sobota</item>
+        <item>Niedziela</item>
+    </string-array>
+</resources>

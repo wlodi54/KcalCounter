@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/plan_save_dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:text="Zapisz plan"
+        android:textColor="@color/fontLight"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/plan_dialog_save_dystansEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nazwa"
+        android:inputType="text"
+        android:textColor="@color/fontLight"
+        android:textColorHint="@color/hintColor"
+        android:layout_below="@+id/plan_save_dialog_title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:id="@+id/plan_dialog_save_btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/buttonColor"
+        android:text="Zapisz"
+        android:textColor="@color/fontLight"
+        android:layout_below="@+id/plan_dialog_save_dystansEditText"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

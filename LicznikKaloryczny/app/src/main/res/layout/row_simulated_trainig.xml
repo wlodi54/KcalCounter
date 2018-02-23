@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <TextView
+        android:text="78,235 km"
+        android:layout_height="wrap_content"
+        android:id="@+id/best_history_distance_textView"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:textSize="16sp"
+        android:paddingTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/fontLight"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="160dp" />
+
+    <TextView
+        android:text="30:30 min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/best_history_time_textView"
+        android:layout_row="1"
+        android:layout_column="2"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/fontLight"
+        android:layout_alignBaseline="@+id/best_history_distance_textView"
+        android:layout_alignBottom="@+id/best_history_distance_textView"
+        android:layout_toRightOf="@+id/best_history_distance_textView"
+        android:layout_toEndOf="@+id/best_history_distance_textView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/brown_medal"
+        android:id="@+id/best_history_odznaka"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/best_history_distance_textView"
+        android:layout_toStartOf="@+id/best_history_distance_textView"
+        android:layout_marginRight="5dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/colorAccentLight"
+        android:layout_height="1dp"
+        android:layout_below="@+id/best_history_odznaka"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp" />
+
+
+</RelativeLayout>

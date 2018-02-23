@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_plan"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:padding="2dp"
+    android:visibility="visible">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/borderButton"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        tools:text="Poniedziałek" />
+
+    <View
+        android:id="@+id/plan_border"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@id/text1"
+        android:background="@color/buttonColor"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/text1"
+        android:layout_marginBottom="1dp"
+
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dysc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Dyscyplina"
+            android:textColor="@color/fontLight"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dystans1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dysc1"
+            android:layout_marginRight="2dp"
+            android:text="Dystans"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/czas1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dysc1"
+            android:layout_toEndOf="@+id/dystans1"
+            android:layout_toRightOf="@+id/dystans1"
+            android:text="Czas"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/rl2"
+        android:layout_marginBottom="1dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dysc3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:text="Dyscyplina"
+            android:textColor="@color/fontLight"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dystans3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/czas3"
+            android:layout_alignBottom="@+id/czas3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="2dp"
+            android:text="Dystans"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/czas3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dysc3"
+            android:layout_toEndOf="@+id/dystans3"
+            android:layout_toRightOf="@+id/dystans3"
+            android:text="Czas"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rl1"
+        android:layout_marginBottom="1dp"
+        android:textColor="@color/fontLight"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/dysc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dystans1"
+            android:text="Dyscyplina"
+            android:textColor="@color/fontLight"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/dystans2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/dysc2"
+            android:layout_marginRight="2dp"
+            android:text="Dystans"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/czas2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dysc2"
+            android:layout_toEndOf="@+id/dystans2"
+            android:layout_toRightOf="@+id/dystans2"
+            android:text="Czas"
+            android:textColor="@color/fontLight"
+            android:textSize="12sp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/ic_nordic_walking_plan" />
+
+
+</RelativeLayout>
